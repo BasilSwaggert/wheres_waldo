@@ -1,0 +1,116 @@
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.timer {
+    margin-bottom: 20px;
+    font-size: 25px;
+    display: flex;
+}
+
+.image-container {
+    height: auto;
+    max-width: 980px;
+    position: relative;
+}
+
+.game-image {
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.game-image:hover {
+    cursor: pointer;
+}
+
+.endGameModal {
+    position: absolute;
+    background-color: #EDEDED;
+    padding: 30px;
+    border-radius: 1em;
+    height: 300px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.addToLeaderBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.addToLeaderBoard-button {
+    width: 150px;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.addToLeaderBoard-button:hover, .cancel-button:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.gameOverMessage {
+    font-size: 30px;
+}
+
+form {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+form > input {
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    width: 200px;
+}
+
+.cancel-button {
+    background-color: gray;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.end-game-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+input[name="name"]:focus {
+    outline: none;
+    text-indent: 5px;
+}
